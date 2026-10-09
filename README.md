@@ -1,5 +1,22 @@
 # go-streamhub
 
+## Maintenance moved to `github.com/hollis-labs/libs/ui-go`
+
+This standalone repository is retired. Maintained source and documentation are
+in [github.com/hollis-labs/libs/ui-go/streamhub](https://github.com/hollis-labs/libs/tree/ui-go%2Fv0.1.0/ui-go/streamhub), released in **`ui-go/v0.1.0`**.
+Install the replacement module:
+
+```sh
+go get github.com/hollis-labs/libs/ui-go@v0.1.0
+```
+
+Replace the `github.com/hollis-labs/go-streamhub` import prefix with
+`github.com/hollis-labs/libs/ui-go/streamhub`, retaining the package subpath. Review the replacement documentation
+for any API changes before migrating. Existing standalone tags and history remain
+available; old module pins do not automatically redirect to the new module.
+
+The documentation below describes historical standalone usage.
+
 Payload-opaque, stdlib-only replayable fan-out hub: per-stream cursor, gap signal, replay ring and slow-consumer policies.
 
 ## Status
